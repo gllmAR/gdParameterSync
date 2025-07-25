@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh4ub8g61u5yd"]
+
+[ext_resource type="Script" path="res://gdparametersync-demo/polygon_demo_simple.gd" id="1_v8wbg"]
+
+[node name="PolygonDemoSimple" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_v8wbg")

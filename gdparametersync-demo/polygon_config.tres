@@ -1,0 +1,218 @@
+[gd_resource type="Resource" script_class="ParameterSet" load_steps=15 format=3 uid="uid://o3ht3te6nkka"]
+
+[ext_resource type="Script" uid="uid://b261egc4x0aav" path="res://addons/gdParameterSync/resources/parameter_set.gd" id="1_4dqk0"]
+[ext_resource type="Script" uid="uid://nnq3v8gw7urj" path="res://addons/gdParameterSync/resources/parameter.gd" id="2_8hjkl"]
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("2_8hjkl")
+name = "sides"
+type = 2
+value = 6
+min_value = 3.0
+max_value = 12.0
+step = 1.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Number of sides"
+group = "Basic"
+factory_value = 6
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("2_8hjkl")
+name = "radius"
+type = 3
+value = 100.0
+min_value = 20.0
+max_value = 200.0
+step = 5.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Radius"
+group = "Basic"
+factory_value = 100.0
+
+[sub_resource type="Resource" id="Resource_3"]
+script = ExtResource("2_8hjkl")
+name = "rotation"
+type = 3
+value = 0.0
+min_value = 0.0
+max_value = 360.0
+step = 1.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Rotation"
+group = "Transform"
+factory_value = 0.0
+
+[sub_resource type="Resource" id="Resource_4"]
+script = ExtResource("2_8hjkl")
+name = "fill_color"
+type = 24
+value = Color(0.2, 0.6, 0.8, 0.7)
+min_value = null
+max_value = null
+step = 0.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Fill Color"
+group = "Visual"
+factory_value = Color(0.2, 0.6, 0.8, 0.7)
+
+[sub_resource type="Resource" id="Resource_5"]
+script = ExtResource("2_8hjkl")
+name = "line_color"
+type = 24
+value = Color(1, 1, 1, 1)
+min_value = null
+max_value = null
+step = 0.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Line Color"
+group = "Visual"
+factory_value = Color(1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_6"]
+script = ExtResource("2_8hjkl")
+name = "line_width"
+type = 3
+value = 2.0
+min_value = 0.5
+max_value = 10.0
+step = 0.5
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Line Width"
+group = "Visual"
+factory_value = 2.0
+
+[sub_resource type="Resource" id="Resource_7"]
+script = ExtResource("2_8hjkl")
+name = "auto_rotate"
+type = 1
+value = false
+min_value = null
+max_value = null
+step = 0.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Auto Rotate"
+group = "Animation"
+factory_value = false
+
+[sub_resource type="Resource" id="Resource_8"]
+script = ExtResource("2_8hjkl")
+name = "rotate_speed"
+type = 3
+value = 30.0
+min_value = 1.0
+max_value = 180.0
+step = 1.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Rotation Speed"
+group = "Animation"
+factory_value = 30.0
+
+[sub_resource type="Resource" id="Resource_9"]
+script = ExtResource("2_8hjkl")
+name = "pulse_enabled"
+type = 1
+value = true
+min_value = null
+max_value = null
+step = 0.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Pulse Effect"
+group = "Animation"
+factory_value = true
+
+[sub_resource type="Resource" id="Resource_10"]
+script = ExtResource("2_8hjkl")
+name = "pulse_strength"
+type = 3
+value = 0.2
+min_value = 0.0
+max_value = 1.0
+step = 0.05
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Pulse Strength"
+group = "Animation"
+factory_value = 0.2
+
+[sub_resource type="Resource" id="Resource_11"]
+script = ExtResource("2_8hjkl")
+name = "position"
+type = 5
+value = Vector2(400, 300)
+min_value = null
+max_value = null
+step = 0.0
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Position"
+group = "Transform"
+factory_value = Vector2(400, 300)
+
+[sub_resource type="Resource" id="Resource_12"]
+script = ExtResource("2_8hjkl")
+name = "scale_factor"
+type = 3
+value = 1.0
+min_value = 0.1
+max_value = 3.0
+step = 0.1
+enum_values = []
+ui_hints = {}
+read_only = false
+address_override = ""
+backend_meta = {}
+description = "Scale"
+group = "Transform"
+factory_value = 1.0
+
+[resource]
+script = ExtResource("1_4dqk0")
+id = "polygon_config"
+label = "Polygon Configuration"
+groups = []
+parameters = [SubResource("Resource_1"), SubResource("Resource_2"), SubResource("Resource_3"), SubResource("Resource_4"), SubResource("Resource_5"), SubResource("Resource_6"), SubResource("Resource_7"), SubResource("Resource_8"), SubResource("Resource_9"), SubResource("Resource_10"), SubResource("Resource_11"), SubResource("Resource_12")]
+preset_policy = 1
+bindings = []
+meta = {}
